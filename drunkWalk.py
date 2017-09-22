@@ -24,7 +24,7 @@ def drunkWalk():
     turtle.write(counter, font=("Arial", 10, "normal"))
 
 def main():
-    turtle.speed(30)
+    turtle.speed(10)
     turtle.setworldcoordinates(0, 0, 500, 500)
     turtle.pu()
     turtle.goto(250,250)
