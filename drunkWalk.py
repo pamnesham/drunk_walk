@@ -21,9 +21,14 @@ def drunkWalk():
         direction()
         turtle.forward(20)
         counter  = counter + 20
-    turtle.write(counter, font=("Arial", 10, "normal"))
+    turtle.pu()
+    turtle.goto(250,400)
+    turtle.hideturtle()
+    turtle.pd()
+    turtle.write("Steps taken to escape Dinkytown: " + str(counter), align = "center", font=("Arial", 13, "bold"))
 
 def main():
+    turtle.setup(width = 500, height = 500)
     turtle.speed(10)
     turtle.setworldcoordinates(0, 0, 500, 500)
     turtle.pu()
